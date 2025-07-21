@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles4.css">
+    <title>Sistem Monitoring Santri</title>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Logo" />
+      <span>System Monitoring Santri</span>
+    </div>
+    <nav class="menu">
+      <a href="file:///C:/Users/USER/Documents/Torik/monitoring%20santri/home.html#">Home</a>
+      <a href="file:///C:/Users/USER/Documents/Torik/monitoring%20santri/absensi.html" class="nav-link active">Absensi</a>
+      <a href="file:///C:/Users/USER/Documents/Torik/monitoring%20santri/kesehatan.html">Kesehatan</a>
+      <a href="file:///C:/Users/USER/Documents/Torik/monitoring%20santri/setoran.html">Setoran</a>
+      <a href="file:///C:/Users/USER/Documents/Torik/monitoring%20santri/profil.html">Profil</a>
+    </nav>
+  </header>
+  <h2 style="text-align:center;">ABSENSI PER KAMAR SANTRI</h2>
+
+  <!-- Dropdown Rayon & Kamar -->
+  <div class="filter-row">
+    <div class="filter-group">
+      <label for="rayon">Rayon</label>
+      <select id="rayon">
+        <option value="Al Jufri">Al Jufri</option>
+        <option value="Al Kautsar">Al Kautsar</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="kamar">Kamar</label>
+      <select id="kamar">
+        <option value="1">1</option>
+        <option value="2">2</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Form Absensi -->
+  <form class="form-absensi">
+    <table class="tabel-absensi">
+      <thead>
+        <tr>
+          <th>Nama</th>
+          <th>Hadir</th>
+          <th>Izin</th>
+          <th>Sakit</th>
+          <th>Alpha</th>
+        </tr>
+      </thead>
+      <tbody id="absensi-body">
+        <!-- Diisi dengan JavaScript -->
+      </tbody>
+    </table>
+
+    <div class="footer-form">
+      <button type="submit">Simpan</button>
+      <input type="date" name="tanggalAbsensi" required>
+    </div>
+  </form>
+
+  <script src="script4.js"></script>

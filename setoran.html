@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <title>Sistem Monitoring Santri</title>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Logo" />
+      <span>System Monitoring Santri</span>
+    </div>
+    <nav class="menu">
+      <a href="file:///C:/Users/USER/Documents/Torik/monitoring%20santri/home.html#">Home</a>
+      <a href="file:///C:/Users/USER/Documents/Torik/monitoring%20santri/absensi.html">Absensi</a>
+      <a href="file:///C:/Users/USER/Documents/Torik/monitoring%20santri/kesehatan.html">Kesehatan</a>
+      <a href="file:///C:/Users/USER/Documents/Torik/monitoring%20santri/setoran.html" class="nav-link active">Setoran</a>
+      <a href="file:///C:/Users/USER/Documents/Torik/monitoring%20santri/profil.html">Profil</a>
+    </nav>
+  </header>
+    
+    <div class="container">
+
+        <main>
+            <form id="healthForm">
+                <div class="input-group">
+                    <label for="rayon">Rayon</label>
+                    <input type="text" id="rayon" required>
+                </div>
+                <div class="input-group">
+                    <label for="kamar">Kamar</label>
+                    <input type="text" id="kamar" required>
+                </div>
+                <h2>SETORAN HAFALAN</h2>
+                <div class="input-group">
+                    <label for="nama">Nama</label>
+                    <input type="text" id="nama" required>
+                </div>
+                <div class="input-group">
+                    <label for="tanggal">Tanggal</label>
+                    <input type="date" id="tanggal" required>
+                </div>
+                <div class="input-group">
+                    <label for="keluhan">Setoran</label>
+                    <textarea id="keluhan" required></textarea>
+                </div>
+                <button type="submit">Simpan</button>
+            </form>
+        </main>
+    </div>
+
+    <script src="script3.js"></script>
+</body>
+</html>
